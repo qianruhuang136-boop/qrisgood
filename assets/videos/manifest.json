@@ -1,0 +1,202 @@
+[
+  {
+    "category": "short",
+    "label": "短视频",
+    "title": "一辆会思考的特斯拉自己离开了工厂",
+    "description": "汽车品牌短视频，突出产品卖点、热点表达与平台传播节奏。",
+    "video": "assets/videos/short-01.mp4",
+    "poster": "assets/images/video/short-01.jpg",
+    "duration": "1:01",
+    "resolution": "480×854"
+  },
+  {
+    "category": "short",
+    "label": "短视频",
+    "title": "农业科技自豪向短视频",
+    "description": "短视频内容样片，突出选题、脚本、剪辑与传播表达。",
+    "video": "assets/videos/short-02.mp4",
+    "poster": "assets/images/video/short-02.jpg",
+    "duration": "0:46",
+    "resolution": "480×854"
+  },
+  {
+    "category": "short",
+    "label": "短视频",
+    "title": "南京大屠杀议题短视频",
+    "description": "热点/议题向短视频，突出选题切入、信息整理和情绪表达。",
+    "video": "assets/videos/short-03.mp4",
+    "poster": "assets/images/video/short-03.jpg",
+    "duration": "0:50",
+    "resolution": "480×854"
+  },
+  {
+    "category": "short",
+    "label": "短视频",
+    "title": "奥运议题短视频",
+    "description": "热点/议题向短视频，突出选题切入、信息整理和情绪表达。",
+    "video": "assets/videos/short-04.mp4",
+    "poster": "assets/images/video/short-04.jpg",
+    "duration": "0:37",
+    "resolution": "480×854"
+  },
+  {
+    "category": "short",
+    "label": "短视频",
+    "title": "孙耀威人生故事向解说",
+    "description": "短视频内容样片，突出选题、脚本、剪辑与传播表达。",
+    "video": "assets/videos/short-05.mp4",
+    "poster": "assets/images/video/short-05.jpg",
+    "duration": "0:59",
+    "resolution": "480×854"
+  },
+  {
+    "category": "short",
+    "label": "短视频",
+    "title": "曾黎女将军角色燃向",
+    "description": "短视频内容样片，突出选题、脚本、剪辑与传播表达。",
+    "video": "assets/videos/short-06.mp4",
+    "poster": "assets/images/video/short-06.jpg",
+    "duration": "0:30",
+    "resolution": "480×854"
+  },
+  {
+    "category": "short",
+    "label": "短视频",
+    "title": "有多少人买Model X是为了这一下",
+    "description": "汽车品牌短视频，突出产品卖点、热点表达与平台传播节奏。",
+    "video": "assets/videos/short-07.mp4",
+    "poster": "assets/images/video/short-07.jpg",
+    "duration": "0:14",
+    "resolution": "480×854"
+  },
+  {
+    "category": "short",
+    "label": "短视频",
+    "title": "海关议题短视频",
+    "description": "热点/议题向短视频，突出选题切入、信息整理和情绪表达。",
+    "video": "assets/videos/short-08.mp4",
+    "poster": "assets/images/video/short-08.jpg",
+    "duration": "0:53",
+    "resolution": "480×854"
+  },
+  {
+    "category": "short",
+    "label": "短视频",
+    "title": "特斯拉交付进化史",
+    "description": "汽车品牌短视频，突出产品卖点、热点表达与平台传播节奏。",
+    "video": "assets/videos/short-09.mp4",
+    "poster": "assets/images/video/short-09.jpg",
+    "duration": "0:27",
+    "resolution": "480×854"
+  },
+  {
+    "category": "short",
+    "label": "短视频",
+    "title": "盗墓议题短视频",
+    "description": "热点/议题向短视频，突出选题切入、信息整理和情绪表达。",
+    "video": "assets/videos/short-10.mp4",
+    "poster": "assets/images/video/short-10.jpg",
+    "duration": "1:05",
+    "resolution": "480×854"
+  },
+  {
+    "category": "artist",
+    "label": "艺人短视频",
+    "title": "多角色变装",
+    "description": "人物向内容剪辑，适合展示艺人内容包装和短视频节奏。",
+    "video": "assets/videos/artist-01.mp4",
+    "poster": "assets/images/video/artist-01.jpg",
+    "duration": "0:53",
+    "resolution": "480×854"
+  },
+  {
+    "category": "artist",
+    "label": "艺人短视频",
+    "title": "小雨王老吉KOL",
+    "description": "人物向内容剪辑，适合展示艺人内容包装和短视频节奏。",
+    "video": "assets/videos/artist-02.mp4",
+    "poster": "assets/images/video/artist-02.jpg",
+    "duration": "1:32",
+    "resolution": "480×854"
+  },
+  {
+    "category": "artist",
+    "label": "艺人短视频",
+    "title": "小雨盛典vlog",
+    "description": "人物向内容剪辑，适合展示艺人内容包装和短视频节奏。",
+    "video": "assets/videos/artist-03.mp4",
+    "poster": "assets/images/video/artist-03.jpg",
+    "duration": "2:09",
+    "resolution": "480×854"
+  },
+  {
+    "category": "artist",
+    "label": "艺人短视频",
+    "title": "小雨铜镜vlog",
+    "description": "人物向内容剪辑，适合展示艺人内容包装和短视频节奏。",
+    "video": "assets/videos/artist-04.mp4",
+    "poster": "assets/images/video/artist-04.jpg",
+    "duration": "2:08",
+    "resolution": "480×854"
+  },
+  {
+    "category": "artist",
+    "label": "艺人短视频",
+    "title": "小雨间谍vlog",
+    "description": "人物向内容剪辑，适合展示艺人内容包装和短视频节奏。",
+    "video": "assets/videos/artist-05.mp4",
+    "poster": "assets/images/video/artist-05.jpg",
+    "duration": "1:49",
+    "resolution": "480×854"
+  },
+  {
+    "category": "short",
+    "label": "短视频",
+    "title": "金莎《爱的魔法》",
+    "description": "短视频内容样片，突出选题、脚本、剪辑与传播表达。",
+    "video": "assets/videos/short-11.mp4",
+    "poster": "assets/images/video/short-11.jpg",
+    "duration": "0:30",
+    "resolution": "464×918"
+  },
+  {
+    "category": "short",
+    "label": "短视频",
+    "title": "马斯克上海展示Model X短视频",
+    "description": "汽车品牌短视频，突出产品卖点、热点表达与平台传播节奏。",
+    "video": "assets/videos/short-12.mp4",
+    "poster": "assets/images/video/short-12.jpg",
+    "duration": "0:40",
+    "resolution": "480×854"
+  },
+  {
+    "category": "long",
+    "label": "长视频",
+    "title": "客户个人成长向短视频",
+    "description": "完整叙事/采访类视频，适合展示策划、采访与内容结构能力。",
+    "video": "assets/videos/long-01.mp4",
+    "poster": "assets/images/video/long-01.jpg",
+    "duration": "8:48",
+    "resolution": "854×480"
+  },
+  {
+    "category": "long",
+    "label": "长视频",
+    "title": "采访北大歌后",
+    "description": "完整叙事/采访类视频，适合展示策划、采访与内容结构能力。",
+    "video": "assets/videos/long-02.mp4",
+    "poster": "assets/images/video/long-02.jpg",
+    "duration": "8:25",
+    "resolution": "480×854"
+  },
+  {
+    "category": "long",
+    "label": "长视频",
+    "title": "餐厅门店老板采访",
+    "description": "完整叙事/采访类视频，适合展示策划、采访与内容结构能力。",
+    "video": "assets/videos/long-03.mp4",
+    "poster": "assets/images/video/long-03.jpg",
+    "duration": "3:31",
+    "resolution": "480×854"
+  }
+]

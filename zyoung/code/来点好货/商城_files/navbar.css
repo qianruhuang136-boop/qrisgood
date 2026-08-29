@@ -1,0 +1,12 @@
+.btn-outline-secondary:hover{
+  background-color: #82D8C1!important;
+}
+.nav-link:hover{
+  color: #82D8C1!important;
+  text-decoration: none;
+}
+.navbar{
+  /* background-color: #FFEEF5!important; */
+  position: fixed!important;
+  top: 0!important;
+}

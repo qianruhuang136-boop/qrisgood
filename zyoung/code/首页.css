@@ -1,0 +1,105 @@
+*{
+  margin:0;
+  padding:0;
+  line-height:1;
+}
+html,body{
+  width:100%;
+  height:100%;
+  background-image:url(../img/背景.png);
+  background-size:cover;
+  background-attachment:fixed;
+}
+#carouselExampleIndicators{
+  width:100%;
+  height:auto;
+  overflow: hidden;
+}
+
+/* 轮播图指示器（底部按钮）的样式 */
+.carousel-indicators button {
+  background-color: white!important;
+  height: 5px!important;
+  /* text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3)!important; */
+  /* border-color: #82D8C1!important;  */
+}
+.content_container {
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: white;
+}
+.layout_padding {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.layout_padding2 {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+.layout_padding2-top {
+  padding-top: 45px;
+}
+
+.layout_padding2-bottom {
+  padding-bottom: 45px;
+}
+
+.layout_padding-top {
+  padding-top: 120px;
+}
+
+.layout_padding-bottom {
+  padding-bottom: 120px;
+}
+
+.heading_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #fff;
+
+}
+
+.heading_container h2 {
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.heading_container h2::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 145px;
+  height: 1px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: rgba(#fff,1);
+}
+
+.content_container h3{
+  letter-spacing: 2px;
+  font-size:1.3em;
+}

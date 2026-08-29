@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RJ5NGVV1N0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-RJ5NGVV1N0');
+</script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>养生指南</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.js"></script>
+    <link rel="stylesheet" href="socialmedia.css">
+    <link rel="stylesheet" href="../navbar.css">
+    <link rel="icon" href="../../img/气球人.png" sizes="16x16">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <style>
+
+    body {
+        background-image:url('背景.png');
+        background-size: cover;
+        background-attachment:fixed;
+        overflow: hidden;
+      }
+p{
+  letter-spacing: 5px;
+  color:rgb(98,142,135);
+}
+
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      .main {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+      }
+      /* 自定义样式 */
+      .swiper-container {
+        width: 310px;
+        height: 440px;
+      }
+      .swiper-slide {
+        background-size: cover;
+        background-attachment:fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        color: #333;
+        cursor: pointer;
+        border-radius: 10px;
+      }
+      .content {
+        position: absolute;
+        /* width: 100%; */
+        width: 0;
+        display: none;
+        height: 100%;
+        background-image:url('c.png');
+        background-size: cover;
+        background-attachment:fixed;
+        transition: all 0.6s;
+      }
+      .center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        width: 310px;
+        height: 440px;
+        display: none;
+      }
+      #close {
+        position: absolute;
+        font-size: 20px;
+        top: 50%;
+        transform: scale(1.8);
+        left: 0;
+        left: 50px;
+      }
+      @keyframes stretchAnimation {
+        0% {
+          transform: skewY(0deg);
+        }
+        25% {
+          transform: skewY(-20deg);
+        }
+        50% {
+          transform: skewX(20deg);
+        }
+        75% {
+          transform: skew(20deg, 20deg);
+        }
+        100% {
+          transform: skewY(0deg) scale(1.3);
+        }
+      }
+      @keyframes exitAnimation {
+        0% {
+          transform: skewY(0deg) scale(1.3);
+        }
+        25% {
+          transform: skew(20deg, 20deg);
+        }
+        50% {
+          transform: skewX(20deg);
+        }
+        75% {
+          transform: skewY(-20deg);
+        }
+        100% {
+          transform: skewY(0deg);
+        }
+      }
+    </style>
+
+  </head>
+  <body>
+
+    <!-- Navigation -->
+      <header class="position-sticky top-0 navbar navbar-expand-lg align-items-stretch px-5"
+        style="z-index: 1020; background:#ffffff;">
+        <a href="../首页.html ">
+        <img class="d-block nav-item" style="height: 3.5em; padding-right:2em; margin-top:0px;margin-bottom:0px;padding-top:0;padding-bottom:0;"
+         src="../../img/logo黑.png" />
+         </a >
+        <div id="navbar-links" class="collapse navbar-collapse">
+         <div class="navbar-nav" id="nav1">
+          <a class="nav-item nav-link nav-font" style="color: #4E4E4E;" href="把我扒光.html">&nbsp;把我扒光&nbsp;</a >
+          <a class="nav-item nav-link active" style="color: #4E4E4E;" href="养生指南.html">&nbsp;养生指南&nbsp;</a >
+          <a class="nav-item nav-link" style="color: #4E4E4E;" href="../养生会所/build/养生会所.html">&nbsp;养生会所&nbsp;</a >
+          <a class="nav-item nav-link" style="color: #4E4E4E;" href="../来点好货/来点好货.html">&nbsp;来点好货&nbsp;</a >
+         </div>
+        </div>
+        <div class="flex-grow-1" style="min-width: 1em;"></div>
+        <img id="nav-pull" class="nav-icon navbar-toggler p-0 border-0 me-3" data-bs-toggle="collapse"
+         data-bs-target="#navbar-links" src="../../img/pull-down.svg" alt="下拉" style="margin-right:1em;">
+        <img id="nav-search" class="nav-icon"  src="../../img/search.svg" alt="搜索" style="margin-right:1em;">
+        <button class="nav-item btn btn-outline-secondary"
+         style="border-radius:100px; color:#4E4E4E; background-color: white;cborder-width:1.1px; border-color:#ACACAC;margin-right:1rem;">&nbsp;&nbsp;&nbsp;&nbsp;登录/注册&nbsp;&nbsp;&nbsp;&nbsp;</button>
+       </header>
+
+
+
+    <div class="main">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <!-- 添加更多卡片项 -->
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div id="close">x</div>
+      <div class="container"></div>
+    </div>
+    <div class="center"></div>
+
+    <div class="fixed-bottom text-center">
+<p style="padding-bottom:0.7em;">拖动卡片查看不同养生大法🧘 点击卡片查看详细信息～</p>
+<h7>分享</h7>
+<section class="ss-icon">
+           <a target="_blank" class="social_media"href=""><article class="social_media_article"><img src="../../img/bilibili.svg"style="width:60%;padding-top:0.4em;"></article></a>
+           <a target="_blank" class="social_media"href=""><article class="social_media_article"><img src="../../img/twitter.svg"style="width:65%;padding-top:0.37em;"></article></a>
+           <a target="_blank" class="social_media"href=""><article class="social_media_article"><img src="../../img/wechat.svg"style="width:65%;padding-top:0.34em;"></article></a>
+           <a target="_blank" class="social_media"href=""><article class="social_media_article"><img src="../../img/weibo.svg"style="width:70%;padding-top:0.3em;"></article></a>
+         </section>
+</div>
+
+  </body>
+  <script src="卡片.js"></script>
+</html>

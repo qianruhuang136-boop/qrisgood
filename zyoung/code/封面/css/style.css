@@ -1,0 +1,893 @@
+/* 媒体查询部分 */
+/*PHONE样式*/
+@media screen and (max-width: 767px) {
+
+    /*    去掉页面的内外边距，初始化设置*/
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /*中间内容的容器*/
+    .wrap {
+        width: 100%;
+        height: 100vh;
+        background: url(../img/bg.png) no-repeat center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+    }
+
+    /*Z平台的slogan*/
+    .slogan {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 999;
+    }
+
+    /*logo gif图片 */
+    .logo {
+        width: 240px;
+    }
+
+    .logo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .slogancontent {
+        width: 100%;
+        font-size: 12px;
+        text-align: center;
+        margin-top: -60px;
+        margin-bottom: 40px;
+        font-weight: 200;
+    }
+
+    .btn {
+        width: 200px;
+        background: #9acac5;
+        border-radius: 100px;
+        padding: 10px 0;
+        font-size: 14px;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        color: black;
+
+    }
+
+    /*两侧背景图片*/
+    .bg {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /*左侧图片*/
+    .leftbg {
+        width: 180px;
+        position: relative;
+        top: -80px;
+    }
+
+    .leftbg img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /*右侧图片*/
+    .rightbg {
+        width: 300px;
+        margin-top: 50px;
+        margin-left: -100px;
+    }
+
+    .rightbg img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /*顶部滚动*/
+    .top-scroll {
+        position: absolute;
+        width: 100%;
+        height: 50px;
+        left: 0px;
+        top: 0px;
+        z-index: 2;
+        background: #fff;
+        overflow: hidden;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .top-scroll h1 {
+        font-size: 20px;
+        text-transform: uppercase;
+        color: black;
+        white-space: nowrap;
+        padding: 0% 0%;
+        letter-spacing: 2px;
+        animation: topscroll 8000ms linear infinite;
+    }
+
+    @keyframes topscroll {
+        0% {
+            transform: translateX(0%);
+        }
+
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+    /*    底部滚动*/
+    .bottom-scroll {
+        position: absolute;
+        width: 100%;
+        height: 50px;
+        left: 0px;
+        bottom: 0px;
+        z-index: 3;
+        background: #fff;
+        overflow: hidden;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .bottom-scroll h1 {
+        font-size: 20px;
+        text-transform: uppercase;
+        color: black;
+        white-space: nowrap;
+        padding: 0% 0%;
+        letter-spacing: 2px;
+        animation: bottomscroll 8000ms linear infinite;
+    }
+
+    @keyframes bottomscroll {
+        0% {
+            transform: translateX(0%);
+        }
+
+        100% {
+            transform: translateX(100%);
+        }
+    }
+}
+
+/*PAD竖版*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    /*    去掉页面的内外边距，初始化设置*/
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /*中间内容的容器*/
+    .wrap {
+        width: 100%;
+        height: 100vh;
+        background: url(../img/bg.png) no-repeat center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+    }
+
+    /*Z平台的slogan*/
+    .slogan {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 999;
+    }
+
+    /*logo gif图片 */
+    .logo {
+        width: 400px;
+    }
+
+    .logo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .slogancontent {
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+        margin-top: -100px;
+        margin-bottom: 40px;
+    }
+
+    .btn {
+        width: 260px;
+        background: #9acac5;
+        border-radius: 100px;
+        padding: 24px 0;
+        font-size: 20px;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        color: black;
+    }
+
+    /*两侧背景图片*/
+    .bg {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    /*左侧图片*/
+    .leftbg {
+        width: 230px;
+        margin-top: 80px;
+        position: relative;
+        top: -70px;
+    }
+
+    .leftbg img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /*右侧图片*/
+    .rightbg {
+        width: 400px;
+        margin-top: 60px;
+        margin-left: -200px;
+    }
+
+    .rightbg img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /*顶部滚动*/
+    .top-scroll {
+        position: absolute;
+        width: 100%;
+        height: 50px;
+        left: 0px;
+        top: 0px;
+        z-index: 2;
+        background: #fff;
+        overflow: hidden;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .top-scroll h1 {
+        font-size: 20px;
+        text-transform: uppercase;
+        color: black;
+        white-space: nowrap;
+        padding: 0% 0%;
+        letter-spacing: 2px;
+        animation: topscroll 8000ms linear infinite;
+    }
+
+    @keyframes topscroll {
+        0% {
+            transform: translateX(0%);
+        }
+
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+    /*    底部滚动*/
+    .bottom-scroll {
+        position: absolute;
+        width: 100%;
+        height: 50px;
+        left: 0px;
+        bottom: 0px;
+        z-index: 3;
+        background: #fff;
+        overflow: hidden;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .bottom-scroll h1 {
+        font-size: 20px;
+        text-transform: uppercase;
+        color: black;
+        white-space: nowrap;
+        padding: 0% 0%;
+        letter-spacing: 2px;
+        animation: bottomscroll 8000ms linear infinite;
+    }
+
+    @keyframes bottomscroll {
+        0% {
+            transform: translateX(0%);
+        }
+
+        100% {
+            transform: translateX(100%);
+        }
+    }
+}
+
+/*PAD横版*/
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+    /*    去掉页面的内外边距，初始化设置*/
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /*中间内容的容器*/
+    .wrap {
+        width: 100%;
+        height: 100vh;
+        background: url(../img/bg.png) no-repeat center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+    }
+
+    /*Z平台的slogan*/
+    .slogan {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 999;
+    }
+
+    /*logo gif图片 */
+    .logo {
+        width: 400px;
+    }
+
+    .logo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .slogancontent {
+        width: 100%;
+        font-size: 16px;
+        text-align: center;
+        margin-top: -100px;
+        margin-bottom: 40px;
+    }
+
+    .btn {
+        width: 260px;
+        background: #9acac5;
+        border-radius: 100px;
+        padding: 24px 0;
+        font-size: 20px;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        color: black;
+
+    }
+
+    /*两侧背景图片*/
+    .bg {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /*左侧图片*/
+    .leftbg {
+        width: 400px;
+    }
+
+    .leftbg img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /*右侧图片*/
+    .rightbg {
+        width: 500px;
+    }
+
+    .rightbg img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /*顶部滚动*/
+    .top-scroll {
+        position: absolute;
+        width: 100%;
+        height: 50px;
+        left: 0px;
+        top: 0px;
+        z-index: 2;
+        background: #fff;
+        overflow: hidden;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .top-scroll h1 {
+        font-size: 20px;
+        text-transform: uppercase;
+        color: black;
+        white-space: nowrap;
+        padding: 0% 0%;
+        letter-spacing: 2px;
+        animation: topscroll 8000ms linear infinite;
+    }
+
+    @keyframes topscroll {
+        0% {
+            transform: translateX(0%);
+        }
+
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+    /*    底部滚动*/
+    .bottom-scroll {
+        position: absolute;
+        width: 100%;
+        height: 50px;
+        left: 0px;
+        bottom: 0px;
+        z-index: 3;
+        background: #fff;
+        overflow: hidden;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .bottom-scroll h1 {
+        font-size: 20px;
+        text-transform: uppercase;
+        color: black;
+        white-space: nowrap;
+        padding: 0% 0%;
+        letter-spacing: 2px;
+        animation: bottomscroll 8000ms linear infinite;
+    }
+
+    @keyframes bottomscroll {
+        0% {
+            transform: translateX(0%);
+        }
+
+        100% {
+            transform: translateX(100%);
+        }
+    }
+}
+
+/*PC大屏幕*/
+@media screen and (min-width: 1200px) and (max-width: 1920px) {
+
+    /*    去掉页面的内外边距，初始化设置*/
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /*中间内容的容器*/
+    .wrap {
+        width: 100%;
+        height: 100vh;
+        background: url(../img/bg.png) no-repeat center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+    }
+
+    /*Z平台的slogan*/
+    .slogan {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 999;
+    }
+
+    /*logo gif图片 */
+    .logo {
+        width: 600px;
+    }
+
+    .logo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .slogancontent {
+        width: 100%;
+        font-size: 10px;
+        text-align: center;
+        margin-top: -100px;
+        margin-bottom: 80px;
+        font-family: san-serif;
+        font-weight:normal;
+        letter-spacing: 3px;
+    }
+
+    .btn {
+        width: 200px;
+        background: #9acac5;
+        border-radius: 100px;
+        padding: 20px 0;
+        font-size: 20px;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        color: black;
+        font-weight:bold;
+
+    }
+
+    /*两侧背景图片*/
+    .bg {
+        width: 90%;
+        height: 100vh;
+        /*        background: red;*/
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /*左侧图片*/
+    .leftbg {
+        width: 600px;
+        width: 700px;
+        margin-left: -80px;
+    }
+
+    .leftbg img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /*右侧图片*/
+    .rightbg {
+        width: 800px;
+        margin-top: -40px;
+        margin-right: -50px;
+    }
+
+    .rightbg img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /*顶部滚动*/
+    .top-scroll {
+        position: absolute;
+        width: 100%;
+        height: 50px;
+        left: 0px;
+        top: 0px;
+        z-index: 2;
+        background: #fff;
+        overflow: hidden;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .top-scroll h1 {
+        font-size: 20px;
+        text-transform: uppercase;
+        color: black;
+        white-space: nowrap;
+        padding: 0% 0%;
+        letter-spacing: 2px;
+        animation: topscroll 8000ms linear infinite;
+    }
+
+    @keyframes topscroll {
+        0% {
+            transform: translateX(0%);
+        }
+
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+    /*    底部滚动*/
+    .bottom-scroll {
+        position: absolute;
+        width: 100%;
+        height: 50px;
+        left: 0px;
+        bottom: 0px;
+        z-index: 3;
+        background: #fff;
+        overflow: hidden;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .bottom-scroll h1 {
+        font-size: 20px;
+        text-transform: uppercase;
+        color: black;
+        white-space: nowrap;
+        padding: 0% 0%;
+        letter-spacing: 2px;
+        animation: bottomscroll 8000ms linear infinite;
+    }
+
+    @keyframes bottomscroll {
+        0% {
+            transform: translateX(0%);
+        }
+
+        100% {
+            transform: translateX(100%);
+        }
+    }
+}
+
+/*4k超大PC屏幕下的专用样式*/
+@media screen and (min-width: 1921px) {
+
+    /*    去掉页面的内外边距，初始化设置*/
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /*中间内容的容器*/
+    .wrap {
+        width: 100%;
+        height: 100vh;
+        background: url(../img/bg.png) no-repeat center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+    }
+
+    /*Z平台的slogan*/
+    .slogan {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 999;
+    }
+
+    /*logo gif图片 */
+    .logo {
+        width: 600px;
+    }
+
+    .logo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .slogancontent {
+        width: 100%;
+        font-size: 18px;
+        text-align: center;
+        margin-top: -100px;
+        margin-bottom: 80px;
+    }
+
+    .btn {
+        width: 300px;
+        background: #9acac5;
+        border-radius: 100px;
+        padding: 40px 0;
+        font-size: 30px;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        color: black;
+
+    }
+
+    /*两侧背景图片*/
+    .bg {
+        width: 90%;
+        height: 100vh;
+        /*        background: red;*/
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /*左侧图片*/
+    .leftbg {
+        width: 900px;
+    }
+
+    .leftbg img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /*右侧图片*/
+    .rightbg {
+        width: 1000px;
+    }
+
+    .rightbg img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /*顶部滚动*/
+    .top-scroll {
+        position: absolute;
+        width: 100%;
+        height: 50px;
+        left: 0px;
+        top: 0px;
+        z-index: 2;
+        background: #fff;
+        overflow: hidden;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .top-scroll h1 {
+        font-size: 20px;
+        text-transform: uppercase;
+        color: black;
+        white-space: nowrap;
+        padding: 0% 0%;
+        letter-spacing: 2px;
+        animation: topscroll 8000ms linear infinite;
+    }
+
+    @keyframes topscroll {
+        0% {
+            transform: translateX(0%);
+        }
+
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+    /*    底部滚动*/
+    .bottom-scroll {
+        position: absolute;
+        width: 100%;
+        height: 50px;
+        left: 0px;
+        bottom: 0px;
+        z-index: 3;
+        background: #fff;
+        overflow: hidden;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .bottom-scroll h1 {
+        font-size: 20px;
+        text-transform: uppercase;
+        color: black;
+        white-space: nowrap;
+        padding: 0% 0%;
+        letter-spacing: 2px;
+        animation: bottomscroll 8000ms linear infinite;
+    }
+
+    @keyframes bottomscroll {
+        0% {
+            transform: translateX(0%);
+        }
+
+        100% {
+            transform: translateX(100%);
+        }
+    }
+
+}

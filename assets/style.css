@@ -24,6 +24,7 @@ button,a[href]{min-height:24px}
 .nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:14px var(--gut);display:flex;align-items:center;justify-content:space-between;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 .nav-logo{font-family:'Playfair Display','Noto Serif SC',serif;font-weight:900;font-size:1.25rem;color:var(--ink)}
 .nav-logo em{color:var(--blue);font-style:italic}
+.nav-logo img{height:34px;width:auto;display:block;mix-blend-mode:multiply}
 .nav-links{display:flex;gap:24px;align-items:center}
 .nav-links a{font-size:.82rem;font-weight:500;color:var(--muted);transition:color .2s;position:relative}
 .nav-links a:hover,.nav-links a.active{color:var(--blue)}

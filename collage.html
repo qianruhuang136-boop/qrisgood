@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>黄倩茹 · 拼贴版作品集</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Noto+Serif+SC:wght@400;600;700;900&family=Caveat:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#FFFFFF;--paper-2:#F8FAFC;--paper-3:#F1F5F9;
+  --ink:#0F172A;--muted:#64748B;
+  --terracotta:#2563EB;--forest:#059669;--mustard:#F59E0B;
+  --cream:#FFFFFF;--line:rgba(15,23,42,.1);
+  --display:clamp(3rem,7vw,7rem);--h1:clamp(2rem,3.5vw,3.2rem);--h2:clamp(1.4rem,2vw,1.8rem);
+  --body:clamp(.92rem,1vw,1rem);--gut:clamp(24px,5vw,80px);
+  --ease:cubic-bezier(.22,.61,.36,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden;background-image:radial-gradient(circle at 20% 30%,rgba(37,99,235,.03) 0%,transparent 50%),radial-gradient(circle at 80% 70%,rgba(5,150,105,.03) 0%,transparent 50%)}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+button,a[href]{min-height:24px}
+.wrap{max-width:1280px;margin:0 auto;padding-inline:var(--gut)}
+.torn-br{clip-path:polygon(0 0,100% 0,100% 92%,96% 96%,92% 93%,88% 97%,82% 94%,76% 98%,70% 95%,64% 99%,58% 95%,52% 98%,46% 94%,40% 97%,34% 93%,28% 96%,22% 92%,16% 95%,10% 91%,4% 94%,0 90%)}
+.washi{position:absolute;width:110px;height:30px;background:rgba(37,99,235,.22);box-shadow:0 1px 3px rgba(0,0,0,.1);z-index:5;pointer-events:none}
+.washi.green{background:rgba(5,150,105,.18)}
+.washi.gold{background:rgba(245,158,11,.25)}
+.sticky{background:var(--cream);padding:18px 20px;box-shadow:2px 4px 12px rgba(42,37,32,.12);position:relative}
+.sticky.terracotta{background:#DBEAFE}
+.sticky.green{background:#D1FAE5}
+.polaroid{background:#fff;padding:12px 12px 48px;box-shadow:3px 5px 15px rgba(42,37,32,.15);position:relative}
+.polaroid .caption{position:absolute;bottom:12px;left:0;right:0;text-align:center;font-family:'Caveat',cursive;font-size:1.1rem;color:var(--muted)}
+.stamp{border:2.5px solid var(--terracotta);color:var(--terracotta);border-radius:50%;width:80px;height:80px;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-weight:700;font-size:.7rem;text-align:center;line-height:1.2;transform:rotate(-12deg);opacity:.8}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:16px var(--gut);display:flex;align-items:center;justify-content:space-between;background:rgba(255,255,255,.9);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav-logo{font-family:'Playfair Display','Noto Serif SC',serif;font-weight:900;font-size:1.3rem;color:var(--ink)}
+.nav-logo em{color:var(--terracotta);font-style:italic}
+.nav-links{display:flex;gap:28px;align-items:center}
+.nav-links a{font-size:.85rem;font-weight:500;color:var(--muted);transition:color .2s}
+.nav-links a:hover{color:var(--terracotta)}
+@media(max-width:768px){.nav-links{display:none}}
+.hero{position:relative;min-height:100svh;padding:140px var(--gut) 80px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:start;max-width:1280px;margin:0 auto}
+.hero-text{position:relative;z-index:2;padding-top:20px}
+.hero-eyebrow{font-family:'Caveat',cursive;font-size:1.4rem;color:var(--terracotta);margin-bottom:8px;transform:rotate(-1deg);display:inline-block}
+.hero h1{font-family:'Playfair Display','Noto Serif SC',serif;font-weight:900;font-size:var(--display);line-height:.95;color:var(--ink);margin-bottom:16px}
+.hero h1 .italic{font-style:italic;color:var(--terracotta);font-weight:400}
+.hero-subtitle{font-family:'Playfair Display',serif;font-style:italic;font-size:clamp(1rem,1.5vw,1.3rem);color:var(--muted);margin-bottom:28px}
+.hero-desc{font-size:var(--body);color:var(--muted);max-width:440px;line-height:1.8;margin-bottom:32px}
+.hero-tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:36px;max-width:440px}
+.hero-tags .tag{font-size:.78rem;font-weight:600;padding:5px 14px;border:1px solid var(--line);border-radius:2px;background:var(--cream);color:var(--ink);transition:all .2s}
+.hero-tags .tag:hover{background:var(--terracotta);color:#fff;border-color:var(--terracotta)}
+.hero-ctas{display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+.btn-paper{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;background:var(--ink);color:var(--cream);font-weight:600;font-size:.9rem;box-shadow:3px 3px 0 var(--terracotta);transition:all .2s}
+.btn-paper:hover{transform:translate(-2px,-2px);box-shadow:5px 5px 0 var(--terracotta)}
+.btn-ghost{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border:1.5px solid var(--ink);color:var(--ink);font-weight:600;font-size:.9rem;transition:all .2s}
+.btn-ghost:hover{background:var(--ink);color:var(--cream)}
+.hero-collage{position:relative;height:560px;margin-top:20px}
+.hero-photo-main{position:absolute;top:0;right:0;width:78%;z-index:2}
+.hero-photo-main .polaroid{transform:rotate(3deg)}
+.hero-photo-main img{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:top}
+.hero-photo-main .washi{top:-10px;left:35%;transform:rotate(-4deg)}
+.hero-stamp{position:absolute;top:40%;left:5%;z-index:4}
+.hero-deco-1{position:absolute;top:15%;left:-5%;width:120px;height:120px;background:var(--forest);opacity:.08;z-index:0;transform:rotate(15deg)}
+.hero-deco-2{position:absolute;bottom:10%;right:-3%;width:80px;height:80px;background:var(--mustard);opacity:.15;z-index:0;border-radius:50%}
+@media(max-width:960px){.hero-grid{grid-template-columns:1fr;gap:60px}.hero-collage{height:480px;max-width:400px;margin:0 auto}}
+.section{position:relative;padding-block:100px}
+.sec-head{margin-bottom:48px;position:relative}
+.sec-head .num{font-family:'Playfair Display',serif;font-style:italic;font-size:1rem;color:var(--terracotta);margin-bottom:8px;display:flex;align-items:center;gap:12px}
+.sec-head .num::after{content:"";flex:1;height:1px;background:var(--line);max-width:120px}
+.sec-head h2{font-family:'Playfair Display','Noto Serif SC',serif;font-weight:700;font-size:var(--h1);line-height:1.1;color:var(--ink)}
+.sec-head h2 em{font-style:italic;color:var(--terracotta);font-weight:400}
+.sec-head p{color:var(--muted);max-width:520px;margin-top:16px;font-size:var(--body)}
+.stats{background:var(--paper-2);position:relative;overflow:hidden}
+.stats::before{content:"";position:absolute;inset:0;background-image:repeating-linear-gradient(0deg,transparent,transparent 31px,rgba(15,23,42,.04) 31px,rgba(15,23,42,.04) 32px);pointer-events:none}
+.stats-board{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;position:relative}
+.stat-note{position:relative;padding:28px 24px;box-shadow:3px 5px 15px rgba(42,37,32,.12);transition:transform .3s var(--ease)}
+.stat-note:hover{transform:rotate(0deg) scale(1.03)!important;z-index:10}
+.stat-note:nth-child(1){background:#DBEAFE;transform:rotate(-2deg)}
+.stat-note:nth-child(2){background:#D1FAE5;transform:rotate(1.5deg)}
+.stat-note:nth-child(3){background:#FEF3C7;transform:rotate(-1deg)}
+.stat-note:nth-child(4){background:#D1FAE5;transform:rotate(2deg)}
+.stat-note:nth-child(5){background:#DBEAFE;transform:rotate(-1.5deg)}
+.stat-note:nth-child(6){background:#FEF3C7;transform:rotate(1deg)}
+.stat-note:nth-child(7){background:#DBEAFE;transform:rotate(-2deg)}
+.stat-note:nth-child(8){background:#D1FAE5;transform:rotate(1.5deg)}
+.stat-note:nth-child(9){background:#FEF3C7;transform:rotate(-1deg)}
+.stat-note .washi{top:-12px;left:50%;margin-left:-55px;transform:rotate(-3deg)}
+.stat-num{font-family:'Playfair Display',serif;font-weight:900;font-size:clamp(2.2rem,3.5vw,3.2rem);line-height:1;color:var(--ink);margin-bottom:10px}
+.stat-num .unit{font-size:.45em;color:var(--muted);font-weight:400;font-style:italic}
+.stat-label{font-size:.88rem;color:var(--ink);line-height:1.5;font-weight:500}
+@media(max-width:768px){.stats-board{grid-template-columns:1fr;gap:24px}}
+.tl-collage{position:relative}
+.tl-item{display:grid;grid-template-columns:200px 1fr;gap:40px;padding-bottom:64px;position:relative;align-items:start}
+.tl-item:last-child{padding-bottom:0}
+.tl-item::before{content:"";position:absolute;left:92px;top:0;bottom:0;width:1px;background:var(--line)}
+.tl-item:last-child::before{display:none}
+.tl-year{font-family:'Playfair Display',serif;font-weight:900;font-size:2.5rem;color:var(--terracotta);text-align:right;padding-right:40px;position:relative;line-height:1}
+.tl-year::after{content:"";position:absolute;right:-6px;top:8px;width:13px;height:13px;border-radius:50%;background:var(--paper);border:3px solid var(--terracotta)}
+.tl-company{display:inline-block;font-family:'Caveat',cursive;font-size:1.3rem;color:var(--forest);margin-bottom:6px;transform:rotate(-1deg)}
+.tl-content h3{font-family:'Noto Serif SC',serif;font-weight:700;font-size:var(--h2);color:var(--ink);margin-bottom:12px}
+.tl-content p{color:var(--muted);max-width:600px;line-height:1.8;font-size:var(--body)}
+@media(max-width:768px){.tl-item{grid-template-columns:1fr;gap:12px}.tl-year{text-align:left;padding-right:0;padding-left:24px}.tl-year::after{left:0;right:auto}.tl-item::before{left:5px}}
+.skills{background:var(--paper-2);position:relative}
+.skills-board{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;position:relative}
+.skill-card{background:var(--cream);border:1px solid var(--line);padding:28px 24px;position:relative;box-shadow:3px 4px 0 var(--paper-3);transition:all .3s var(--ease)}
+.skill-card:hover{transform:translateY(-4px);box-shadow:5px 8px 0 var(--terracotta)}
+.skill-card:nth-child(2){transform:translateY(20px)}
+.skill-card:nth-child(5){transform:translateY(20px)}
+.skill-card .skill-idx{font-family:'Playfair Display',serif;font-style:italic;font-size:.85rem;color:var(--terracotta);margin-bottom:12px}
+.skill-card h4{font-family:'Noto Serif SC',serif;font-weight:700;font-size:1.1rem;color:var(--ink);margin-bottom:6px}
+.skill-card .level{font-family:'Caveat',cursive;font-size:1rem;color:var(--forest)}
+.skill-card p{color:var(--muted);font-size:.85rem;line-height:1.65;margin-top:10px}
+.skill-bar{margin-top:16px;height:4px;background:var(--paper-3);position:relative}
+.skill-bar-fill{height:100%;background:var(--terracotta)}
+.skill-card:nth-child(even) .skill-bar-fill{background:var(--forest)}
+@media(max-width:960px){.skills-board{grid-template-columns:repeat(2,1fr)}.skill-card:nth-child(2),.skill-card:nth-child(5){transform:none}}
+@media(max-width:600px){.skills-board{grid-template-columns:1fr}}
+.projects-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.project-card{position:relative;background:var(--cream);border:1px solid var(--line);box-shadow:4px 6px 0 var(--paper-3);transition:all .35s var(--ease)}
+.project-card:hover{transform:translateY(-6px) rotate(-.5deg);box-shadow:8px 12px 0 var(--terracotta)}
+.project-card:nth-child(2){margin-top:60px}
+.project-img{aspect-ratio:4/3;overflow:hidden;position:relative}
+.project-img img{width:100%;height:100%;object-fit:cover;filter:saturate(.9) contrast(1.05)}
+.project-img .washi{top:-10px;left:20%;transform:rotate(-5deg)}
+.project-body{padding:28px 28px 32px;position:relative}
+.project-tag{display:inline-block;font-family:'Caveat',cursive;font-size:1.1rem;color:var(--terracotta);margin-bottom:8px}
+.project-body h3{font-family:'Noto Serif SC',serif;font-weight:700;font-size:1.4rem;color:var(--ink);margin-bottom:10px}
+.project-body p{color:var(--muted);font-size:.9rem;line-height:1.65}
+.project-arrow{position:absolute;bottom:24px;right:24px;width:40px;height:40px;border-radius:50%;background:var(--ink);color:var(--cream);display:flex;align-items:center;justify-content:center;transition:all .3s}
+.project-card:hover .project-arrow{background:var(--terracotta);transform:rotate(-45deg)}
+@media(max-width:768px){.projects-grid{grid-template-columns:1fr;gap:32px}.project-card:nth-child(2){margin-top:0}}
+.works{background:var(--paper-2);position:relative;overflow:hidden}
+.work-cat{margin-bottom:72px}
+.work-cat:last-child{margin-bottom:0}
+.work-subcat{font-family:'Caveat',cursive;font-size:1.35rem;color:var(--terracotta);margin:36px 0 20px;display:flex;align-items:center;gap:14px}
+.work-subcat::after{content:"";flex:1;height:1px;background:var(--line);max-width:240px}
+.work-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.work-item{position:relative;background:#fff;padding:10px 10px 14px;box-shadow:3px 5px 14px rgba(15,23,42,.12);transition:all .35s var(--ease)}
+.work-item:hover{transform:scale(1.04) rotate(0deg)!important;z-index:10;box-shadow:6px 12px 28px rgba(15,23,42,.2)}
+.work-item .wi-img{position:relative;overflow:hidden;aspect-ratio:4/3;background:var(--paper-2)}
+.work-item .wi-img img{width:100%;height:100%;object-fit:cover}
+.work-item .wi-num{position:absolute;top:8px;left:10px;font-family:'Playfair Display',serif;font-style:italic;font-size:.75rem;color:rgba(255,255,255,.85);z-index:2;text-shadow:0 1px 3px rgba(0,0,0,.25)}
+.work-item .wi-title{padding:10px 6px 2px;text-align:center;font-family:'Caveat',cursive;font-size:1.1rem;color:var(--ink);line-height:1.3}
+.work-item .wi-desc{padding:0 6px;text-align:center;font-size:.72rem;color:var(--muted);margin-top:2px}
+.work-item .washi{top:-8px;left:50%;margin-left:-45px;width:90px;height:24px;transform:rotate(-3deg)}
+.work-wide{grid-column:span 2}
+.work-tall .wi-img{aspect-ratio:3/4}
+@media(max-width:900px){.work-gallery{grid-template-columns:repeat(2,1fr)}.work-wide{grid-column:span 1}}
+@media(max-width:560px){.work-gallery{grid-template-columns:1fr}}
+.footer{background:var(--ink);color:var(--cream);padding-block:70px 36px;position:relative}
+.footer::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:repeating-linear-gradient(90deg,var(--terracotta) 0,var(--terracotta) 40px,var(--mustard) 40px,var(--mustard) 80px,var(--forest) 80px,var(--forest) 120px)}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:48px;margin-bottom:48px}
+.footer-brand h3{font-family:'Playfair Display','Noto Serif SC',serif;font-weight:900;font-size:1.8rem;margin-bottom:12px}
+.footer-brand h3 em{color:var(--terracotta);font-style:italic}
+.footer-brand p{color:rgba(250,246,238,.55);font-size:.88rem;max-width:320px;line-height:1.7}
+.footer-col h5{font-family:'Caveat',cursive;font-size:1.2rem;color:var(--mustard);margin-bottom:16px}
+.footer-col a{display:block;color:rgba(250,246,238,.6);font-size:.85rem;padding:5px 0;transition:color .2s,padding-left .2s}
+.footer-col a:hover{color:var(--terracotta);padding-left:6px}
+.footer-bottom{border-top:1px solid rgba(250,246,238,.1);padding-top:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+.footer-bottom p{color:rgba(250,246,238,.35);font-size:.78rem}
+.footer-stamp{border:2px solid rgba(37,99,235,.5);color:rgba(37,99,235,.7);border-radius:50%;width:64px;height:64px;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-weight:700;font-size:.6rem;text-align:center;transform:rotate(8deg)}
+@media(max-width:768px){.footer-grid{grid-template-columns:1fr;gap:32px}}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition-duration:.01ms!important}.rv{opacity:1;transform:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a href="#" class="nav-logo">Qian<em>ru</em>.</a>
+  <div class="nav-links">
+    <a href="#stats">数据</a><a href="#experience">经历</a><a href="#skills">技能</a><a href="#projects">策划</a><a href="#works">作品</a>
+  </div>
+</nav>
+<section class="hero">
+  <div class="hero-deco-1"></div><div class="hero-deco-2"></div>
+  <div class="hero-grid">
+    <div class="hero-text">
+      <span class="hero-eyebrow">— Portfolio 2026 —</span>
+      <h1>黄倩<span class="italic">茹</span></h1>
+      <p class="hero-subtitle">User Growth · Content Operation · Visual Design</p>
+      <p class="hero-desc">中国传媒大学品牌营销传播硕士在读（GPA 3.99/4.0，专业前5%），2027届，本科以专业前3名保研。曾在腾讯元宝、字节豆包飞书、特斯拉、字节TikTok、央视完成5段头部企业实习，从内容判断到用户增长、平台生态，形成完整增长闭环。</p>
+      <div class="hero-tags">
+        <span class="tag">用户增长</span><span class="tag">内容运营</span><span class="tag">视觉设计</span><span class="tag">创作者运营</span><span class="tag">品牌传播</span><span class="tag">数据分析</span><span class="tag">AIGC应用</span>
+      </div>
+      <div class="hero-ctas">
+        <a href="#works" class="btn-paper">看作品 →</a>
+        <a href="#experience" class="btn-ghost">经历主线</a>
+      </div>
+    </div>
+    <div class="hero-collage">
+      <div class="hero-photo-main">
+        <div class="polaroid">
+          <div class="washi"></div>
+          <img src="https://aka.doubaocdn.com/s/oHpaz2BaVn" alt="黄倩茹" class="torn-br">
+          <span class="caption">@qianru · 2026</span>
+        </div>
+      </div>
+      <div class="hero-stamp"><div class="stamp">BRAND<br>MARKETING<br>2027</div></div>
+    </div>
+  </div>
+</section>
+<section class="section stats" id="stats">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="num">01 / Metrics</span><h2>关键<em>数据</em></h2><p>通过内容增长、创作者运营与平台策略积累，持续获得可量化的传播与用户增长结果。</p></div>
+    <div class="stats-board">
+      <div class="stat-note rv"><div class="washi"></div><div class="stat-num">3<span class="unit">万→6万</span></div><div class="stat-label">特斯拉区域账号两个月内粉丝翻倍</div></div>
+      <div class="stat-note rv"><div class="washi green"></div><div class="stat-num">1100<span class="unit">万+</span></div><div class="stat-label">特斯拉区域内容累计播放量</div></div>
+      <div class="stat-note rv"><div class="washi gold"></div><div class="stat-num">1000<span class="unit">+</span></div><div class="stat-label">搭建腾讯元宝达人内容矩阵</div></div>
+      <div class="stat-note rv"><div class="washi green"></div><div class="stat-num">68<span class="unit">家</span></div><div class="stat-label">字节TikTok影视机构分层运营</div></div>
+      <div class="stat-note rv"><div class="washi"></div><div class="stat-num">500<span class="unit">万+</span></div><div class="stat-label">央视综艺二创内容累计播放量</div></div>
+      <div class="stat-note rv"><div class="washi gold"></div><div class="stat-num">4<span class="unit">万+</span></div><div class="stat-label">统筹校园公众号一年内涨粉</div></div>
+      <div class="stat-note rv"><div class="washi"></div><div class="stat-num">3.99<span class="unit">/4.0</span></div><div class="stat-label">硕士GPA，专业前5%</div></div>
+      <div class="stat-note rv"><div class="washi green"></div><div class="stat-num">前3<span class="unit">名</span></div><div class="stat-label">本科专业排名保研</div></div>
+      <div class="stat-note rv"><div class="washi gold"></div><div class="stat-num">金奖<span class="unit">国家级</span></div><div class="stat-label">互联网+创新创业大赛</div></div>
+    </div>
+  </div>
+</section>
+<section class="section experience" id="experience">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="num">02 / Journey</span><h2>经历<em>主线</em></h2><p>从内容判断，到用户视角、平台生态，再到内容供给、渠道测试和数据复盘形成增长闭环。</p></div>
+    <div class="tl-collage">
+      <div class="tl-item rv"><div class="tl-year">01</div><div class="tl-content"><span class="tl-company">央视综艺频道</span><h3>内容选题与多平台传播</h3><p>最早在央视综艺频道实习时，主要负责综艺二创内容和多平台传播。这段经历形成了对内容选题、热点传播和不同平台表达方式的判断。</p></div></div>
+      <div class="tl-item rv"><div class="tl-year">02</div><div class="tl-content"><span class="tl-company">特斯拉中国</span><h3>从内容走向用户与转化</h3><p>基于区域用户画像和门店获客目标做短视频增长，参与从0到1搭建门店线上增长体系，把内容生产、审核和数据复盘流程标准化，并推动到全国团队复制。</p></div></div>
+      <div class="tl-item rv"><div class="tl-year">03</div><div class="tl-content"><span class="tl-company">字节TikTok</span><h3>平台生态与内容供给</h3><p>负责海外影视垂类内容生态运营，做机构分层、内容表现监测和策略复盘，参与内容分层评估和分发策略迭代。</p></div></div>
+      <div class="tl-item rv"><div class="tl-year">04</div><div class="tl-content"><span class="tl-company">腾讯元宝</span><h3>内容供给到增长闭环</h3><p>负责快手渠道达人内容矩阵、素材测试和复盘，参与搭建1000+达人内容矩阵，基于多指标报告反推素材方向和资源分配。</p></div></div>
+      <div class="tl-item rv"><div class="tl-year">05</div><div class="tl-content"><span class="tl-company">字节（豆包飞书）</span><h3>产品营销与创意运营</h3><p>参与豆包、飞书信息流营销素材供给，对接8家素材代理，周均审核100+套图片、50+套视频；优化内容结构与视觉效果，使板块日均转化+20%、CTR提升15%；沉淀素材审核规范，输出色彩、字体层级与图形模板。</p></div></div>
+    </div>
+  </div>
+</section>
+<section class="section skills" id="skills">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="num">03 / Skills</span><h2>专业<em>技能</em></h2><p>熟练使用设计、剪辑、数据分析与AI工具，能够独立完成从内容生产到网页呈现的完整工作。</p></div>
+    <div class="skills-board">
+      <div class="skill-card rv"><span class="skill-idx">— 01</span><h4>视觉设计 <span class="level">/ 最熟练</span></h4><p>Photoshop、Figma，独立完成运营物料、UI界面、推文视觉、H5长图与AIGC海报设计。</p><div class="skill-bar"><div class="skill-bar-fill" style="width:95%"></div></div></div>
+      <div class="skill-card rv"><span class="skill-idx">— 02</span><h4>内容运营与文案 <span class="level">/ 熟练</span></h4><p>公众号推文、微博及朋友圈文案写作，熟悉热点选题、节目宣发和多平台内容表达。</p><div class="skill-bar"><div class="skill-bar-fill" style="width:85%"></div></div></div>
+      <div class="skill-card rv"><span class="skill-idx">— 03</span><h4>视频剪辑 <span class="level">/ 最熟练</span></h4><p>Premiere、剪映，完成短视频、艺人内容、节目二创和采访类长视频的独立剪辑。</p><div class="skill-bar"><div class="skill-bar-fill" style="width:92%"></div></div></div>
+      <div class="skill-card rv"><span class="skill-idx">— 04</span><h4>数据分析 <span class="level">/ 良好</span></h4><p>Excel，掌握SQL与Python基础，可完成内容监测、渠道复盘和增长数据分析。</p><div class="skill-bar"><div class="skill-bar-fill" style="width:75%"></div></div></div>
+      <div class="skill-card rv"><span class="skill-idx">— 05</span><h4>AI工具与自动化 <span class="level">/ 熟练</span></h4><p>Codex、WorkBuddy与AIGC模型，搭建素材整理、网页生成和复盘报告自动化工作流。</p><div class="skill-bar"><div class="skill-bar-fill" style="width:88%"></div></div></div>
+      <div class="skill-card rv"><span class="skill-idx">— 06</span><h4>编程与网页 <span class="level">/ 掌握</span></h4><p>HTML、CSS、基础JavaScript与Python脚本，独立搭建作品集和轻量互动页面。</p><div class="skill-bar"><div class="skill-bar-fill" style="width:70%"></div></div></div>
+    </div>
+  </div>
+</section>
+<section class="section projects" id="projects">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="num">04 / Featured</span><h2>精选<em>策划</em></h2><p>围绕品牌联名、用户洞察与影像传播完成策略梳理、创意构思和方案表达。</p></div>
+    <div class="projects-grid">
+      <div class="project-card rv"><div class="project-img"><div class="washi"></div><img src="https://aka.doubaocdn.com/s/kVbAFb4qyo" alt="汉堡王 × 无畏契约"></div><div class="project-body"><span class="project-tag">— Brand Collaboration</span><h3>汉堡王 × 无畏契约</h3><p>游戏用户洞察、品牌联名概念与整合传播策划。</p><div class="project-arrow"><svg width="16" height="16" viewBox="0 0 256 256" fill="currentColor"><path d="M221.7 133.7l-72 72a8.2 8.2 0 0 1-11.4 0 8.1 8.1 0 0 1 0-11.4L196.7 136H40a8 8 0 0 1 0-16h156.7l-58.4-58.3a8.1 8.1 0 0 1 11.4-11.4l72 72a8.1 8.1 0 0 1 0 11.4Z"/></svg></div></div></div>
+      <div class="project-card rv"><div class="project-img"><div class="washi green"></div><img src="https://aka.doubaocdn.com/s/6uPeQo6ELV" alt="李宁品牌影像摄制方案"></div><div class="project-body"><span class="project-tag">— Visual Concept</span><h3>李宁品牌影像摄制方案</h3><p>运动品牌、电竞文化与视觉概念设计。</p><div class="project-arrow"><svg width="16" height="16" viewBox="0 0 256 256" fill="currentColor"><path d="M221.7 133.7l-72 72a8.2 8.2 0 0 1-11.4 0 8.1 8.1 0 0 1 0-11.4L196.7 136H40a8 8 0 0 1 0-16h156.7l-58.4-58.3a8.1 8.1 0 0 1 11.4-11.4l72 72a8.1 8.1 0 0 1 0 11.4Z"/></svg></div></div></div>
+    </div>
+  </div>
+</section>
+<section class="section works" id="works">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="num">05 / Works</span><h2>作品<em>展示</em></h2><p>涵盖视频剪辑、营销策划、视觉设计、内容文案与互动网页等多类作品。</p></div>
+
+    <!-- 视频作品 -->
+    <div class="work-cat rv">
+      <div class="work-subcat">— 视频作品 —</div>
+      <div class="work-gallery">
+        <div class="work-item work-wide" style="transform:rotate(-1deg)"><div class="washi"></div><div class="wi-img"><span class="wi-num">01</span><img src="https://aka.doubaocdn.com/s/0kWry0IV1E" alt="视频作品"></div><div class="wi-title">短视频 / 艺人 / 长视频</div><div class="wi-desc">综艺二创、艺人内容、采访类长视频独立剪辑</div></div>
+      </div>
+    </div>
+
+    <!-- 策划作品 -->
+    <div class="work-cat rv">
+      <div class="work-subcat">— 策划作品 —</div>
+      <div class="work-gallery">
+        <div class="work-item" style="transform:rotate(-1.5deg)"><div class="washi"></div><div class="wi-img"><span class="wi-num">01</span><img src="https://aka.doubaocdn.com/s/kVbAFb4qyo" alt="汉堡王×无畏契约"></div><div class="wi-title">汉堡王 × 无畏契约</div><div class="wi-desc">品牌联名创意策划</div></div>
+        <div class="work-item" style="transform:rotate(1deg)"><div class="washi green"></div><div class="wi-img"><span class="wi-num">02</span><img src="https://aka.doubaocdn.com/s/6uPeQo6ELV" alt="李宁品牌影像"></div><div class="wi-title">李宁品牌影像摄制</div><div class="wi-desc">运动品牌视觉概念方案</div></div>
+      </div>
+    </div>
+
+    <!-- 设计作品 -->
+    <div class="work-cat rv">
+      <div class="work-subcat">— 设计作品 —</div>
+
+      <div class="work-subcat" style="font-size:1.15rem;margin-top:24px">排版设计（含动效搭建）</div>
+      <div class="work-gallery">
+        <div class="work-item" style="transform:rotate(-1.5deg)"><div class="washi"></div><div class="wi-img"><span class="wi-num">01</span><img src="https://aka.doubaocdn.com/s/6OgH3v5a2c" alt="人类需要猫咪"></div><div class="wi-title">人类需要猫咪</div></div>
+        <div class="work-item" style="transform:rotate(1deg)"><div class="washi green"></div><div class="wi-img"><span class="wi-num">02</span><img src="https://aka.doubaocdn.com/s/aLkVlGfAdf" alt="这个北京谁爱待谁待吧"></div><div class="wi-title">这个北京谁爱待谁待吧</div></div>
+        <div class="work-item" style="transform:rotate(-1deg)"><div class="washi gold"></div><div class="wi-img"><span class="wi-num">03</span><img src="https://aka.doubaocdn.com/s/AIFN5ZUjGN" alt="2024的九九八十一难"></div><div class="wi-title">2024的九九八十一难</div></div>
+        <div class="work-item" style="transform:rotate(1.5deg)"><div class="washi"></div><div class="wi-img"><span class="wi-num">04</span><img src="https://aka.doubaocdn.com/s/sF6wVDjSV2" alt="邮差鸽鸽"></div><div class="wi-title">邮差鸽鸽</div></div>
+        <div class="work-item" style="transform:rotate(-1deg)"><div class="washi green"></div><div class="wi-img"><span class="wi-num">05</span><img src="https://aka.doubaocdn.com/s/Y8gl2nQZCU" alt="Dr malou为您接诊"></div><div class="wi-title">Dr malou 为您接诊</div></div>
+        <div class="work-item" style="transform:rotate(1deg)"><div class="washi gold"></div><div class="wi-img"><span class="wi-num">06</span><img src="https://aka.doubaocdn.com/s/zCofSxDxOE" alt="宣推无限公司"></div><div class="wi-title">宣推无限公司</div></div>
+      </div>
+
+      <div class="work-subcat" style="font-size:1.15rem;margin-top:32px">运营物料设计</div>
+      <div class="work-gallery">
+        <div class="work-item" style="transform:rotate(-1deg)"><div class="washi"></div><div class="wi-img"><span class="wi-num">01</span><img src="https://aka.doubaocdn.com/s/Cen9AIzIRz" alt="推送头图"></div><div class="wi-title">公众号推送头图</div></div>
+        <div class="work-item" style="transform:rotate(1.5deg)"><div class="washi green"></div><div class="wi-img"><span class="wi-num">02</span><img src="https://aka.doubaocdn.com/s/VPQW2v5rNg" alt="H5页面"></div><div class="wi-title">H5 长图页面</div></div>
+        <div class="work-item" style="transform:rotate(-1.5deg)"><div class="washi gold"></div><div class="wi-img"><span class="wi-num">03</span><img src="https://aka.doubaocdn.com/s/zIw4hDUcxw" alt="数字人项目banner"></div><div class="wi-title">数字人项目 Banner</div></div>
+        <div class="work-item" style="transform:rotate(1deg)"><div class="washi"></div><div class="wi-img"><span class="wi-num">04</span><img src="https://aka.doubaocdn.com/s/CK6Wlrp2xW" alt="数据海报"></div><div class="wi-title">数据可视化海报</div></div>
+        <div class="work-item" style="transform:rotate(-1deg)"><div class="washi green"></div><div class="wi-img"><span class="wi-num">05</span><img src="https://aka.doubaocdn.com/s/LljdPH9H0O" alt="AI海报作业"></div><div class="wi-title">AIGC 海报设计</div></div>
+      </div>
+
+      <div class="work-subcat" style="font-size:1.15rem;margin-top:32px">UI 设计</div>
+      <div class="work-gallery">
+        <div class="work-item" style="transform:rotate(-1.5deg)"><div class="washi"></div><div class="wi-img"><span class="wi-num">01</span><img src="https://aka.doubaocdn.com/s/tdNwh4VVft" alt="龙母游戏UI"></div><div class="wi-title">龙母游戏 UI 界面</div><div class="wi-desc">对话框 / 设置页 / 等级条等</div></div>
+        <div class="work-item" style="transform:rotate(1deg)"><div class="washi green"></div><div class="wi-img"><span class="wi-num">02</span><img src="https://aka.doubaocdn.com/s/UzsrUVhnzy" alt="一帧秒创官网"></div><div class="wi-title">一帧秒创官网设计</div><div class="wi-desc">AI 视频创作平台官网</div></div>
+      </div>
+
+      <div class="work-subcat" style="font-size:1.15rem;margin-top:32px">AIGC 模板设计</div>
+      <div class="work-gallery">
+        <div class="work-item" style="transform:rotate(-1deg)"><div class="washi"></div><div class="wi-img"><span class="wi-num">01</span><img src="https://aka.doubaocdn.com/s/pKdWFtsxHq" alt="蓝色AIGC模板"></div><div class="wi-title">蓝色系 AIGC 模板</div></div>
+        <div class="work-item" style="transform:rotate(1.5deg)"><div class="washi gold"></div><div class="wi-img"><span class="wi-num">02</span><img src="https://aka.doubaocdn.com/s/Q9cH3dF3ZC" alt="橙色AIGC模板"></div><div class="wi-title">橙色系 AIGC 模板</div></div>
+      </div>
+    </div>
+
+    <!-- 文案作品 -->
+    <div class="work-cat rv">
+      <div class="work-subcat">— 文案作品 —</div>
+      <div class="work-gallery">
+        <div class="work-item" style="transform:rotate(-1.5deg)"><div class="washi"></div><div class="wi-img"><span class="wi-num">01</span><img src="https://aka.doubaocdn.com/s/Xm7qUn3J79" alt="这个北京谁爱待谁待吧"></div><div class="wi-title">这个北京谁爱待谁待吧</div><div class="wi-desc">公众号推文文案</div></div>
+        <div class="work-item" style="transform:rotate(1deg)"><div class="washi green"></div><div class="wi-img"><span class="wi-num">02</span><img src="https://aka.doubaocdn.com/s/i10Sgx9DCF" alt="除夕不放假"></div><div class="wi-title">除夕不放假，我摔门而去</div><div class="wi-desc">公众号推文文案</div></div>
+        <div class="work-item" style="transform:rotate(-1deg)"><div class="washi gold"></div><div class="wi-img"><span class="wi-num">03</span><img src="https://aka.doubaocdn.com/s/RvOTkJNBzF" alt="2024的九九八十一难"></div><div class="wi-title">2024的九九八十一难</div><div class="wi-desc">公众号推文文案</div></div>
+      </div>
+    </div>
+
+    <!-- 网页作品 -->
+    <div class="work-cat rv">
+      <div class="work-subcat">— 网页作品 —</div>
+      <div class="work-gallery">
+        <div class="work-item" style="transform:rotate(-1deg)"><div class="washi"></div><div class="wi-img"><span class="wi-num">01</span><img src="https://aka.doubaocdn.com/s/9bjVjaeIaZ" alt="赛博养生网页"></div><div class="wi-title">赛博养生 · 互动网页</div><div class="wi-desc">个人项目网页设计与开发</div></div>
+        <div class="work-item" style="transform:rotate(1.5deg)"><div class="washi green"></div><div class="wi-img"><span class="wi-num">02</span><img src="https://aka.doubaocdn.com/s/oUZUrcTI4b" alt="个人作品集网站"></div><div class="wi-title">个人作品集网站</div><div class="wi-desc">电脑端展示更完整</div></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand"><h3>黄倩<em>茹</em></h3><p>内容 × 用户 × 增长。用内容连接用户，用数据驱动增长，用设计完成表达。</p></div>
+      <div class="footer-col"><h5>— Navigate</h5><a href="#stats">关键数据</a><a href="#experience">经历主线</a><a href="#skills">专业技能</a><a href="#projects">精选策划</a><a href="#works">作品展示</a></div>
+      <div class="footer-col"><h5>— Contact</h5><a href="mailto:qianruhuang136@gmail.com">qianruhuang136@gmail.com</a><a href="#">GitHub</a><a href="#">小红书</a><a href="#">微信公众号</a></div>
+    </div>
+    <div class="footer-bottom"><p>© 2026 黄倩茹. All rights reserved. — Made with collage & coffee.</p><div class="footer-stamp">QR<br>2026</div></div>
+  </div>
+</footer>
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.05,rootMargin:'0px 0px -5% 0px'});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+const skillBars=document.querySelectorAll('.skill-bar-fill');
+const skillIO=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){const w=e.target.style.width;e.target.style.width='0';requestAnimationFrame(()=>{e.target.style.width=w;e.target.style.transition='width 1s cubic-bezier(.22,.61,.36,1)';});skillIO.unobserve(e.target);}}),{threshold:.3});
+skillBars.forEach(b=>skillIO.observe(b));
+</script>
+</body>
+</html>

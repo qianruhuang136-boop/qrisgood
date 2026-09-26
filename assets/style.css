@@ -150,3 +150,9 @@ button,a[href]{min-height:24px}
 .design-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
 @media(max-width:1024px){.design-grid{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:700px){.design-grid{grid-template-columns:repeat(2,1fr)}}
+
+/* 公众号推文横版卡片（2列） */
+.wechat-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+@media(max-width:700px){.wechat-grid{grid-template-columns:1fr}}
+.wechat-grid .di-img{aspect-ratio:2.35/1}
+.wechat-grid .di-img img{object-fit:cover}

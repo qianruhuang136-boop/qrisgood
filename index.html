@@ -36,12 +36,15 @@
 .photo-card img{width:100%;aspect-ratio:3/4;object-fit:cover;display:block}
 .photo-card .caption{position:absolute;bottom:8px;left:0;right:0;text-align:center;font-family:'Caveat',cursive;font-size:.95rem;color:var(--muted)}
 .photo-card .washi{top:-8px;left:50%;margin-left:-40px;width:80px;height:22px;transform:rotate(-4deg)}
-.photo-card:nth-child(1){top:4%;left:14%;width:72%;transform:rotate(-4deg);z-index:3}
+.photo-card:nth-child(1){top:0;left:5%;width:58%;transform:rotate(-6deg);z-index:3}
+.photo-card:nth-child(2){top:8%;right:0;width:52%;transform:rotate(5deg);z-index:2}
+.photo-card:nth-child(3){bottom:0;left:0;width:50%;transform:rotate(3deg);z-index:1}
+.photo-card:nth-child(4){bottom:5%;right:5%;width:54%;transform:rotate(-4deg);z-index:4}
 .hero-stamp{position:absolute;top:45%;left:50%;transform:translate(-50%,-50%);z-index:5;pointer-events:none}
 .hero-deco-1{position:absolute;top:15%;left:-5%;width:120px;height:120px;background:var(--green);opacity:.08;z-index:0;transform:rotate(15deg)}
 .hero-deco-2{position:absolute;bottom:10%;right:-3%;width:80px;height:80px;background:var(--gold);opacity:.15;z-index:0;border-radius:50%}
 @media(max-width:960px){.hero-grid{grid-template-columns:1fr;gap:40px}.hero-collage{height:480px;max-width:400px}}
-@media(max-width:480px){.hero-collage{height:420px}.photo-card:nth-child(1){width:66%}}
+@media(max-width:480px){.hero-collage{height:420px}.photo-card:nth-child(1){width:62%}.photo-card:nth-child(2){width:56%}.photo-card:nth-child(3){width:54%}.photo-card:nth-child(4){width:58%}}
 .stats-board{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;position:relative}
 .stat-note{position:relative;padding:26px 22px;box-shadow:3px 5px 15px rgba(15,23,42,.1);transition:transform .3s var(--ease)}
 .stat-note:hover{transform:rotate(0deg) scale(1.03)!important;z-index:10}
@@ -152,6 +155,9 @@
     </div>
     <div class="hero-collage">
       <div class="photo-card" onclick="openLightbox(this.querySelector('img').src,'黄倩茹')"><div class="washi"></div><img src="assets/images/profile-hqr.jpg" alt="黄倩茹"><span class="caption">@qianru</span></div>
+      <div class="photo-card" onclick="openLightbox(this.querySelector('img').src,'生活照')"><div class="washi green"></div><img src="assets/images/life/daily-1.jpg" alt="生活照1"><span class="caption">daily · 01</span></div>
+      <div class="photo-card" onclick="openLightbox(this.querySelector('img').src,'生活照')"><div class="washi gold"></div><img src="assets/images/life/daily-2.jpg" alt="生活照2"><span class="caption">daily · 02</span></div>
+      <div class="photo-card" onclick="openLightbox(this.querySelector('img').src,'生活照')"><div class="washi"></div><img src="assets/images/life/daily-3.jpg" alt="生活照3"><span class="caption">daily · 03</span></div>
       <div class="hero-stamp"><div class="stamp">BRAND<br>MARKETING<br>2027</div></div>
     </div>
   </div>

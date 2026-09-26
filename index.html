@@ -36,15 +36,12 @@
 .photo-card img{width:100%;aspect-ratio:3/4;object-fit:cover;display:block}
 .photo-card .caption{position:absolute;bottom:8px;left:0;right:0;text-align:center;font-family:'Caveat',cursive;font-size:.95rem;color:var(--muted)}
 .photo-card .washi{top:-8px;left:50%;margin-left:-40px;width:80px;height:22px;transform:rotate(-4deg)}
-.photo-card:nth-child(1){top:0;left:5%;width:58%;transform:rotate(-6deg);z-index:3}
-.photo-card:nth-child(2){top:8%;right:0;width:52%;transform:rotate(5deg);z-index:2}
-.photo-card:nth-child(3){bottom:0;left:0;width:50%;transform:rotate(3deg);z-index:1}
-.photo-card:nth-child(4){bottom:5%;right:5%;width:54%;transform:rotate(-4deg);z-index:4}
+.photo-card:nth-child(1){top:4%;left:14%;width:72%;transform:rotate(-4deg);z-index:3}
 .hero-stamp{position:absolute;top:45%;left:50%;transform:translate(-50%,-50%);z-index:5;pointer-events:none}
 .hero-deco-1{position:absolute;top:15%;left:-5%;width:120px;height:120px;background:var(--green);opacity:.08;z-index:0;transform:rotate(15deg)}
 .hero-deco-2{position:absolute;bottom:10%;right:-3%;width:80px;height:80px;background:var(--gold);opacity:.15;z-index:0;border-radius:50%}
 @media(max-width:960px){.hero-grid{grid-template-columns:1fr;gap:40px}.hero-collage{height:480px;max-width:400px}}
-@media(max-width:480px){.hero-collage{height:420px}.photo-card:nth-child(1){width:62%}.photo-card:nth-child(2){width:56%}.photo-card:nth-child(3){width:54%}.photo-card:nth-child(4){width:58%}}
+@media(max-width:480px){.hero-collage{height:420px}.photo-card:nth-child(1){width:66%}}
 .stats-board{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;position:relative}
 .stat-note{position:relative;padding:26px 22px;box-shadow:3px 5px 15px rgba(15,23,42,.1);transition:transform .3s var(--ease)}
 .stat-note:hover{transform:rotate(0deg) scale(1.03)!important;z-index:10}
@@ -154,10 +151,7 @@
       </div>
     </div>
     <div class="hero-collage">
-      <div class="photo-card" onclick="openLightbox(this.querySelector('img').src,'黄倩茹')"><div class="washi"></div><img src="https://aka.doubaocdn.com/s/oHpaz2BaVn" alt="黄倩茹"><span class="caption">@qianru</span></div>
-      <div class="photo-card" onclick="openLightbox(this.querySelector('img').src,'生活照')"><div class="washi green"></div><img src="https://aka.doubaocdn.com/s/ik6RQDcqBf" alt="生活照1"><span class="caption">daily · 01</span></div>
-      <div class="photo-card" onclick="openLightbox(this.querySelector('img').src,'生活照')"><div class="washi gold"></div><img src="https://aka.doubaocdn.com/s/udiZxMckdM" alt="生活照2"><span class="caption">daily · 02</span></div>
-      <div class="photo-card" onclick="openLightbox(this.querySelector('img').src,'生活照')"><div class="washi"></div><img src="https://aka.doubaocdn.com/s/OedrEN810J" alt="生活照3"><span class="caption">daily · 03</span></div>
+      <div class="photo-card" onclick="openLightbox(this.querySelector('img').src,'黄倩茹')"><div class="washi"></div><img src="assets/images/profile-hqr.jpg" alt="黄倩茹"><span class="caption">@qianru</span></div>
       <div class="hero-stamp"><div class="stamp">BRAND<br>MARKETING<br>2027</div></div>
     </div>
   </div>
@@ -211,8 +205,8 @@
   <div class="wrap">
     <div class="sec-head rv"><span class="num">04 / Featured</span><h2>精选<em>策划</em></h2><p>围绕品牌联名、用户洞察与影像传播完成策略梳理、创意构思和方案表达。</p></div>
     <div class="projects-grid">
-      <a href="projects.html#burger" class="project-card rv"><div class="project-img"><div class="washi"></div><img src="https://aka.doubaocdn.com/s/kVbAFb4qyo" alt="汉堡王 × 无畏契约"></div><div class="project-body"><span class="project-tag">— Brand Collaboration</span><h3>汉堡王 × 无畏契约</h3><p>游戏用户洞察、品牌联名概念与整合传播策划。</p><div class="project-arrow"><svg width="16" height="16" viewBox="0 0 256 256" fill="currentColor"><path d="M221.7 133.7l-72 72a8.2 8.2 0 0 1-11.4 0 8.1 8.1 0 0 1 0-11.4L196.7 136H40a8 8 0 0 1 0-16h156.7l-58.4-58.3a8.1 8.1 0 0 1 11.4-11.4l72 72a8.1 8.1 0 0 1 0 11.4Z"/></svg></div></div></a>
-      <a href="projects.html#lining" class="project-card rv"><div class="project-img"><div class="washi green"></div><img src="https://aka.doubaocdn.com/s/6uPeQo6ELV" alt="李宁品牌影像摄制方案"></div><div class="project-body"><span class="project-tag">— Visual Concept</span><h3>李宁品牌影像摄制方案</h3><p>运动品牌、电竞文化与视觉概念设计。</p><div class="project-arrow"><svg width="16" height="16" viewBox="0 0 256 256" fill="currentColor"><path d="M221.7 133.7l-72 72a8.2 8.2 0 0 1-11.4 0 8.1 8.1 0 0 1 0-11.4L196.7 136H40a8 8 0 0 1 0-16h156.7l-58.4-58.3a8.1 8.1 0 0 1 11.4-11.4l72 72a8.1 8.1 0 0 1 0 11.4Z"/></svg></div></div></a>
+      <a href="projects.html#burger" class="project-card rv"><div class="project-img"><div class="washi"></div><img src="assets/images/covers/project-burger.png" alt="汉堡王 × 无畏契约"></div><div class="project-body"><span class="project-tag">— Brand Collaboration</span><h3>汉堡王 × 无畏契约</h3><p>游戏用户洞察、品牌联名概念与整合传播策划。</p><div class="project-arrow"><svg width="16" height="16" viewBox="0 0 256 256" fill="currentColor"><path d="M221.7 133.7l-72 72a8.2 8.2 0 0 1-11.4 0 8.1 8.1 0 0 1 0-11.4L196.7 136H40a8 8 0 0 1 0-16h156.7l-58.4-58.3a8.1 8.1 0 0 1 11.4-11.4l72 72a8.1 8.1 0 0 1 0 11.4Z"/></svg></div></div></a>
+      <a href="projects.html#lining" class="project-card rv"><div class="project-img"><div class="washi green"></div><img src="assets/images/covers/project-lining.png" alt="李宁品牌影像摄制方案"></div><div class="project-body"><span class="project-tag">— Visual Concept</span><h3>李宁品牌影像摄制方案</h3><p>运动品牌、电竞文化与视觉概念设计。</p><div class="project-arrow"><svg width="16" height="16" viewBox="0 0 256 256" fill="currentColor"><path d="M221.7 133.7l-72 72a8.2 8.2 0 0 1-11.4 0 8.1 8.1 0 0 1 0-11.4L196.7 136H40a8 8 0 0 1 0-16h156.7l-58.4-58.3a8.1 8.1 0 0 1 11.4-11.4l72 72a8.1 8.1 0 0 1 0 11.4Z"/></svg></div></div></a>
     </div>
   </div>
 </section>
@@ -221,11 +215,11 @@
   <div class="wrap">
     <div class="sec-head rv"><span class="num">05 / Works</span><h2>作品<em>入口</em></h2><p>涵盖视频剪辑、营销策划、视觉设计、内容文案与互动网页等多类作品。</p></div>
     <div class="works-entry">
-      <a href="video.html" class="we-card rv"><div class="washi"></div><div class="we-img"><span class="we-num">01</span><img src="https://aka.doubaocdn.com/s/0kWry0IV1E" alt="视频作品"></div><div class="we-title">视频作品</div><div class="we-sub">短视频 / 艺人 / 长视频</div></a>
-      <a href="projects.html" class="we-card rv"><div class="washi green"></div><div class="we-img"><span class="we-num">02</span><img src="https://aka.doubaocdn.com/s/T9Nw2HW5D1" alt="策划作品"></div><div class="we-title">策划作品</div><div class="we-sub">完整PPT方案阅读</div></a>
-      <a href="design.html" class="we-card rv"><div class="washi gold"></div><div class="we-img"><span class="we-num">03</span><img src="https://aka.doubaocdn.com/s/eE8czD8Zqb" alt="设计作品"></div><div class="we-title">设计作品</div><div class="we-sub">UI / 运营物料 / H5 / AIGC</div></a>
-      <a href="copywriting.html" class="we-card rv"><div class="washi"></div><div class="we-img"><span class="we-num">04</span><img src="https://aka.doubaocdn.com/s/eyZPDAUcwx" alt="文案作品"></div><div class="we-title">文案作品</div><div class="we-sub">推文 / 节目宣发 / 短文案</div></a>
-      <a href="web.html" class="we-card rv"><div class="washi green"></div><div class="we-img"><span class="we-num">05</span><img src="https://aka.doubaocdn.com/s/6F5UKLbhVU" alt="网页作品"></div><div class="we-title">网页作品</div><div class="we-sub">个人主页 / 互动网页</div></a>
+      <a href="video.html" class="we-card rv"><div class="washi"></div><div class="we-img"><span class="we-num">01</span><img src="assets/images/covers/gate-video.png" alt="视频作品"></div><div class="we-title">视频作品</div><div class="we-sub">短视频 / 艺人 / 长视频</div></a>
+      <a href="projects.html" class="we-card rv"><div class="washi green"></div><div class="we-img"><span class="we-num">02</span><img src="assets/images/covers/gate-projects.png" alt="策划作品"></div><div class="we-title">策划作品</div><div class="we-sub">完整PPT方案阅读</div></a>
+      <a href="design.html" class="we-card rv"><div class="washi gold"></div><div class="we-img"><span class="we-num">03</span><img src="assets/images/covers/gate-design.png" alt="设计作品"></div><div class="we-title">设计作品</div><div class="we-sub">UI / 运营物料 / H5 / AIGC</div></a>
+      <a href="copywriting.html" class="we-card rv"><div class="washi"></div><div class="we-img"><span class="we-num">04</span><img src="assets/images/covers/gate-copy.png" alt="文案作品"></div><div class="we-title">文案作品</div><div class="we-sub">推文 / 节目宣发 / 短文案</div></a>
+      <a href="web.html" class="we-card rv"><div class="washi green"></div><div class="we-img"><span class="we-num">05</span><img src="assets/images/covers/gate-web.png" alt="网页作品"></div><div class="we-title">网页作品</div><div class="we-sub">个人主页 / 互动网页</div></a>
     </div>
   </div>
 </section>
